@@ -1,7 +1,7 @@
 development:
-  password: be016f2668a32b643b4b306d12e4a76a
-  theme_id: "97916485676"
-  store: bertley-demo.myshopify.com
+  password: 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
+  theme_id: "111832334493"
+  store: lectureone.myshopify.com
   directory: dist/
   ignore_files:
     - config/settings_data.json

@@ -1,2 +1,2 @@
-import "Styles/layout/theme.scss";
-import "Styles/layout/gift-card.scss";
+import "Styles/style.scss"; 
+import "../../main.js"
