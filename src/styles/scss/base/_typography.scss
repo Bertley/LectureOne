@@ -1,0 +1,56 @@
+h1, h2, h3, h4, h5,
+button, label, p,
+pre, span, div, input,
+a, ul, li, pre, code,
+footer, header
+{
+  font-weight: 400;
+}
+.lfw
+{
+  font-weight: 300;
+}
+.regfw
+{
+  font-weight: 400;
+}
+.boldfw
+{
+  font-weight: 700;
+}
+.blackfw
+{
+  font-weight: 900;
+}
+
+.white
+{
+  color: $color-white;
+}
+
+.black
+{
+  color: $color-black;
+}
+
+.yellow
+{
+  color: $color-yellow;
+}
+
+.red, .help-block ul li {
+  color: #EE3A43;
+}
+
+.title {
+  font-size: 2.6em;
+
+  @include media('<=phone_ls'){
+    font-size: 2.3em;
+  }
+
+  @include media('<=phone_lg'){
+    font-size: 1.8em;
+  }
+  
+}

@@ -1,0 +1,33 @@
+#rules
+{
+    padding: 50px 0;
+    text-align: justify;
+
+    @include media('<=tablet'){
+      text-align: left;
+    }
+
+  & h5 {
+    font-weight: 700;
+    text-align: center;
+  }
+
+  & ol {
+    padding-top: 15px;
+
+    @include media('<=tablet'){
+      padding: 15px;
+    }
+  }
+
+  & a {
+    color: black;
+    font-weight: 700;
+  }
+
+  & ul {
+    @include media('<=tablet'){
+      padding: 20px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.footer {
+  background-color: $color-primary;
+  padding: 50px 0;
+  color: $color-white;
+  font-size: 0.9em;
+
+  background-image: url("../img/footer_bg.jpg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  min-height: 300px; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+
+  &__text--link {
+    white-space: nowrap;
+
+      @media(max-width: 400px) {
+        font-size: 3.4vw;
+      }
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  &__social img {
+    max-width: 45px;
+    height: auto;
+    margin: 5px 8px;
+
+    @include media('<=phone_md'){
+      max-width: 35px;
+    }
+  }
+}
+
+

@@ -1,0 +1,656 @@
+.section{
+
+    &__login {
+        background-color : #1D2A32;
+
+        &--wrapper-en {
+            padding-top: 2.7em;
+            padding-bottom: 1em;
+
+            & p {
+                font-size: 0.9em;
+                color: #ffffff;
+            }
+        }
+        &--wrapper-fr {
+            padding-top: 2.7em;
+            padding-bottom: 1em;
+            margin-left: -60px;
+
+            @include media('<=tablet'){
+            margin-left: 0px;
+            }
+
+            & p {
+                font-size: 0.9em;
+                color: #ffffff;
+            }
+           
+        }
+
+        &__left {
+
+            &--findBtn {
+                cursor: pointer;    
+                color: $color-light-blue;
+
+                i{
+                    color: #ffffff;
+                }
+            }
+
+            text-align: center;
+            
+           
+            input[type=button] {
+                background: $color-yellow;
+                font-weight: 900;
+                position: relative;
+                top: -9px;
+                width: 317px;
+                line-height: 1.4em;
+                cursor: pointer;
+
+                @include media('<=tablet'){
+                    width: 94%;
+                }
+            }
+            a {
+                background: $color-yellow;
+                font-weight: 900;
+                position: relative;
+                top: -9px;
+                width: 317px;
+
+                @include media('<=tablet'){
+                    width: 94%;
+                }
+            }
+
+            a.register_btn{
+                background: $color-yellow;
+                font-weight: 900;
+                position: relative;
+                top: -9px;
+                width: 317px;
+                padding: 12px;
+                margin: 0 auto;
+                display: block;
+                line-height: 1.4em;
+                cursor: pointer;
+                font-size: 1.1em;
+                color: #303E48 !important;
+                @include media('<=tablet'){
+                    width: 94%;
+                }
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            & img {
+                width: 2.2em;
+                position: relative;
+                top: 13px;
+            }
+            
+        }
+        
+        &__right {
+            p.forgot{
+                
+                @include media('<=tablet'){
+                    height: 0px;
+                    margin: 0px;
+                    }
+            }
+            &--text02 {
+                position: relative;
+                color: $color-light-blue;
+                margin-left: -10px;
+                // top: 0.8em;
+
+                @include media('<=laptop_md'){
+                    top: 0.7em;
+
+                }
+                @include media('<=tablet'){
+                    top: -1.7em !important;
+                }
+            }
+
+            &--showbtn {
+                color: lightgray;
+                background: white;
+                padding: 9px 4px;
+                left: 193px;
+                top: -6px;
+                height: 39px;
+                display: inline-block;
+                border-left: 1px solid lightgray;
+                cursor: pointer;
+                position: absolute;
+                width: 35.27px;
+                text-align: center;
+
+                @include media('<=laptop_md'){
+                    left: -42px;
+                    top: 0px;
+                    position: relative;
+                }
+
+                @include media('<=tablet'){
+                    left: 50%;
+                    transform: translate(-53%, -42px);
+                }
+
+            }
+
+            &__help {
+                &--01 {
+                    height: 0;
+                    position: relative;
+                    top: -15px;
+                    margin-left: -15px;
+
+                    @include media('<=laptop_md'){
+                            height: auto;
+                            position: relative;
+                            top: 15px;
+                            // padding-bottom: 1em;
+                    }
+
+                }
+                &--02 {
+                    height: 0;
+                    position: relative;
+                    top: -15px;
+                    left: -10px;
+                    width: 400px;
+
+                    @include media('<=laptop_md'){
+                        top: 0;
+                        left: 0px;
+                        width: auto;
+                        height: auto;
+                    }
+
+                    @include media('<=tablet'){
+                        top: 15px;
+                    width: auto;
+
+                    }
+                }
+            }
+
+            @include media('<=laptop_md'){
+                padding-top: 3em;
+            }
+
+            & p {
+                @include media('<=laptop_md'){
+                    text-align: center;
+                    top: 1.6em;
+                }
+            }
+
+            .form-group {
+                @include media('<=laptop_md'){
+                    text-align: center;
+                    // margin-bottom: 0px;
+                }
+            }
+
+            input#email {
+                position: relative;
+                padding-left: 0.7em;
+                top: -45px;
+                left: -15px;
+                width: 250px;
+                text-align: left;
+                
+                @include media('<=laptop_md'){
+                    position: static;
+                    width: 317px;
+                    margin-left: 0px;
+                }
+
+                @include media('<=tablet'){
+                    width: 100%;
+                }
+                
+            }
+
+            input[type=password],
+            input[type=text] {
+                position: relative;
+                padding-left: 0.7em;
+                top: -8px;
+                width: 228px;
+                left: -10px;
+                text-align: left;
+                background-repeat: no-repeat;
+                background-position: right;
+
+                @include media('<=laptop_md'){
+                    position: static;
+                    margin-left: 38px;
+                    width: 317px;
+                }
+
+                @include media('<=tablet'){
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+
+            input[value="SIGN IN"] {
+                position: relative;
+                top: -61px;
+                background: #f9bd28 !important;
+                font-weight: 900;
+                left: -26px;
+                width: 86px;
+                line-height: 1.4em;
+
+                @include media('<=laptop_md'){
+                    position: static;
+                    width: 317px;
+                    margin-top: 0.6em;
+                    margin-bottom: 2.5em;
+                }
+
+                @include media('<=tablet'){
+                    width: 100%;
+                }
+            }
+            input[value="CONNECTEZ-VOUS"] {
+                position: relative;
+                top: -61px;
+                background: #f9bd28 !important;
+                font-weight: 900;
+                left: -40px;
+                width: 186px;
+                line-height: 1.4em;
+
+                @include media('<=laptop_md'){
+                    position: static;
+                    width: 317px;
+                    margin-top: 0.6em;
+                    margin-bottom: 2.5em;
+                }
+
+                @include media('<=tablet'){
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__lookbooken {
+        background-image: url("../img/lookbook_bg.jpg"); 
+        background-color: $color-grey-dark; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        padding: 75px 0 55px;
+        // height: 277px;
+        display:flex;
+        justify-content: flex-end;
+
+        @include media('>laptop_lg'){
+            min-height: 350px;
+            padding: 5em 0;
+        }
+        @include media('<1317px'){
+            background-position: 60% 50% ;
+        }
+        @media(max-width:920px){
+            background-image: url("../img/lookbook_mobile_bg.png");
+            background-position: 50% 9%;
+            background-size: 50%;
+            height: auto;
+        }
+        @include media('<phone_400'){
+           
+            background-size: 92%;
+        }
+        &--container{
+            margin-right: 4vw;
+        }
+
+        &--button {
+            background: $color-yellow;
+            max-width: 360px;
+            font-size: 1.6em;
+            font-weight: 900;
+            margin-top: -25px;
+
+            @include media('<=tablet'){
+                font-size: 1.3em;
+            }
+        }
+
+        &--title_en {
+            // padding-bottom: 0.4em;
+          @include media('>tablet'){
+                text-align: center;
+                margin: 0 auto;
+                
+            }
+            @include media('>laptop'){
+                text-align: center;
+                margin: 0 auto;
+               
+            }
+            @include media('<1017px'){
+                max-width: none;
+
+            }
+            @include media('<=768px'){
+               
+                margin-right: auto;
+                
+
+            } span{
+                @include media('<878px'){
+                    font-size: 2.4rem !important;
+                 }
+            }
+            .get-inspire{
+                font-size: 1.6em !important;
+                font-weight: 500;
+            }
+           
+           
+        }
+      
+        @media(min-width: 1060px) {
+            justify-content: center;
+
+            &--container {
+                transform:translateX(25vw);
+                margin-right: 0;
+            }
+        }
+        @media(max-width: 920px) {
+            justify-content: center;
+
+            &--container {
+                transform:translateX(0);
+                margin-right: 0;
+                margin-top:22vw;
+            }
+        }
+        @media(max-width: 400px) {
+
+            &--container {
+                margin:38vw 15px 0;
+            }
+        }
+    }
+
+
+    &__lookbookfr {
+        background-image: url("../img/lookbook_bg.jpg"); 
+        background-color: $color-grey-dark; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        padding: 3em 0;
+        // height: 277px;
+
+        @include media('>laptop_lg'){
+            min-height: 350px;
+            padding: 5em 0;
+        }
+        @include media('<1317px'){
+            background-position: 85% 50% ;
+        }
+        @include media('<881px'){
+            background-position: 85% 50% ;
+        }
+        @include media('<tablet'){
+            background-image: url("../img/lookbook_mobile_bg.png");
+            background-position: 50% 9%;
+            background-size: 50%;
+            height: auto;
+        }
+        @include media('<phone_400'){
+           
+            background-size: 92%;
+        }
+        &--container{
+            @include media('>tablet'){
+                max-width: 65%;
+                margin-right: 0px;
+                margin-left: auto;
+                overflow: hidden;
+            }
+            @include media('>1316px'){
+                max-width: 50%;
+            }
+            @include media('<tablet'){
+               margin-top: 150px;
+            }
+        }
+
+        &--button {
+            background: $color-yellow;
+            max-width: 360px;
+            font-size: 1.6em;
+            font-weight: 900;
+
+            @include media('<=tablet'){
+                font-size: 1.3em;
+            }
+        }
+
+      
+        &--title_fr {
+            padding-bottom: 0.4em;
+            @include media('>tablet'){
+                max-width: 110%;
+                font-size: 2.05em;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: -14px;
+            }
+            @include media('>laptop'){
+                // max-width: 70%;
+                text-align: center;
+                margin: 0 auto;
+            }
+            @include media('<1317px'){
+               right: -90px;
+               position: relative;
+            }
+            @include media('<1200px'){
+                margin-top:0px;
+                right: auto;
+             }
+             @include media('<1000px'){
+                margin-top:0px;
+             }
+             @include media('<878px'){
+                font-size: 1.8rem !important;
+             }
+            .get-inspire{
+                font-size: 2.9rem;
+                font-weight: 600;
+                @include media('<878px'){
+                    font-size: 2.5rem;
+                 }
+                 @include media('<878px'){
+                    font-size: 2.5rem;
+                 }
+                 @include media('<500px'){
+                    font-size: 1.8rem;
+                 }
+            }
+            span{
+                @include media('<878px'){
+                    font-size: 1.8rem !important;
+                 }
+            }
+        }
+    }
+    &__shopnow {
+
+        padding: 40px 50px 50px;
+
+        @include media('<=tablet'){
+            padding: 3em 0;
+        }
+
+        .col-md-6{
+            padding: 0px 40px;
+        }
+        .col-lg-3{
+            @include media('>=767px'){
+                padding: 0px 20px;
+                flex: 1 0 18%;
+                max-width: 20%;
+            }
+            @include media(">tablet", "<1126px"){
+                padding: 0px 14px;
+                -webkit-box-flex: 1;
+                -ms-flex: 1 0 18%;
+                flex: 1 0 18%;
+                min-width: 27%;
+                max-width: 34%;
+            }
+        }
+        &--btn {
+            background: $color-yellow;
+            font-size: 1.6em;
+            font-weight: 900;
+            white-space: normal;
+            height: auto;
+        }
+
+        &--text01 {
+            font-size: 1.2em;
+            padding-top: 0.3em;
+        }
+
+    }
+
+    &__meetwinner {
+        background: $color-grey-light;
+        padding: 2em 0 0.5em 0;
+        .row{
+            justify-content: center;
+
+            .colm{
+                margin: 25px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: top;
+
+                @include media('<980px'){
+                    margin: 5px 25px;
+                }
+
+
+                .carousel{
+                    max-width: 313px;
+
+                    .winner-img{
+                        max-width: 65%;
+                        margin: 0 auto;
+                        // border-radius: 100px;
+                    }
+                    .carousel-indicators{
+                        bottom: -50px;
+
+                        li{
+                            width:10px;
+                            height: 10px;
+                            border-radius: 50px;
+                            border: none !important;
+                            }
+                    }
+                }
+            }
+            
+        
+        }
+        p.white{
+            font-size: 1.3rem;
+            padding: .5em 0;
+        }
+        
+        .winner-comment{
+            max-width: 750px;
+            text-align: left;
+            background: #fff;
+            color: #000;
+            font-size: 1.8em;
+            padding: 15px 25px;
+            position: relative;
+            margin-left: -40px;
+
+            @include media('<980px'){
+                margin-top: 25px;
+            }
+
+            &:before {
+                content: "";
+                width: 0;
+                height: 0;
+                border-top: 35px solid white;
+                border-left: 40px solid transparent;
+                position: absolute;
+                top:0;
+                left:-40px;
+            }
+            
+            @media(max-width: 1140px) {
+                margin-left: -0px;
+
+                &:before {
+                    border-top: 35px solid transparent;
+                    border-bottom: 35px solid white;
+                    border-left: 35px solid transparent;
+                    border-right: 35px solid transparent;
+                    top:-70px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
+.section__shopnow {
+
+    .row.text-center {
+        margin:50px 0 30px;
+    }
+
+    .img-fluid {
+        display:block;
+        margin: auto;
+
+        &:nth-child(2) {
+            margin-bottom: 30px;
+        }
+    }
+    .shopBtnBox {
+        @media(max-width: 540px) {
+            width: 90%;
+            margin: auto;
+        }
+    }
+}
+
+.section__meetwinner {
+    .winnerDetail {
+        max-width: 330px;
+        margin: 30px auto 0;
+        color: white;
+        font-size: 1.3rem;
+        padding: .5em 0;
+    }
+}

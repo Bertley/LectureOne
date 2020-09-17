@@ -1,0 +1,152 @@
+.help-block ul li {
+
+  font-size: 0.8rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+}
+
+.main-form
+{
+
+  padding: 50px 10px;
+
+  & .container
+  {
+    margin: 0 auto;
+  }
+
+  & h2
+  {
+    font-size: 3.5em;
+
+    @include media('<=tablet'){
+      font-size: 2em;
+    }
+  }
+
+}
+
+.receipt
+{
+  position: relative;
+
+  & input[type=file]
+  {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black;
+}
+.more-receipts
+{
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+
+.has-error {
+
+  & input,
+  & select,
+  & select#province {
+    border: 1px solid red;
+  }
+
+}
+
+.form-group {
+  position: relative;
+  //width: 20em;
+  margin: auto;
+  margin-bottom: 1rem;
+
+  @include media('<=phone_sm'){
+    width: 100%;
+  }
+
+  & .error-icon {
+    display: none;
+    position: absolute;
+    color: red;
+    z-index: 10;
+    right: -6%;
+    top: 20px;
+
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.close-icon
+{
+  display: block!important;
+  color: black!important;
+  top: 48%!important;
+  cursor: pointer!important;
+}
+
+.has-error {
+
+  & .error-icon {
+    display: block;
+  }
+
+  & .close-icon
+  {
+    color: #D2232A!important;
+    top: 25%!important;
+  }
+
+}
+
+#toggle-mobile-email
+{
+
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+::-webkit-input-placeholder {
+  text-align: left;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-align: left;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  text-align: left;  
+}
+
+:-ms-input-placeholder {  
+  text-align: left; 
+}
